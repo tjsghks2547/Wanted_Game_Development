@@ -14,6 +14,7 @@ public:
 	//Player() = default;
 	//~Player() = default;
 	Player();
+	Player(const char* inName);
 	~Player();
 
 	// 클래스 조작 함수.
@@ -27,4 +28,9 @@ private:
 	int x = 0;
 	int y = 0;
 	int speed = 0;
+
+   // 문자열 이름값 
+	char* name = nullptr; 
+	
+
 };
