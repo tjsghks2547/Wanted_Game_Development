@@ -52,15 +52,15 @@ int main()
 	//	entity.ShowName(); 
 	//}
 
-	//const int count = 5; 
-	//Entity* entities[count] = {};
-	////memset(entities, 0, sizeof(Entity*) * count);
+	const int count = 5; 
+	Entity* entities[count] = {};
+	//memset(entities, 0, sizeof(Entity*) * count);
 
-	//for (int ix =0; ix <count; ++ix)
-	//{
-	//	cout << ix; 
-	//	entities[ix] = new Entity(); 
-	//}
+	for (int ix =0; ix <count; ++ix)
+	{
+		cout << ix; 
+		entities[ix] = new Entity(); 
+	}
 
 	/*for(Entity* entity : entities)
 	{
@@ -69,11 +69,11 @@ int main()
 	}*/
 
 
-	//for (Entity*& entity : entities)
-	//{
-	//	delete entity;
-	//	entity = nullptr;
-	//}
+	for (Entity*& entity : entities)
+	{
+		delete entity;
+		entity = nullptr;
+	}
 
 
 
@@ -105,11 +105,11 @@ int main()
 
 
 
-	Entity* entity = new Entity(); 
-	cout << entity << "\n";
-	cout << entity << entity->GetSelf() << "\n";
+	//Entity* entity = new Entity(); 
+	//cout << entity << "\n";
+	//cout << entity << entity->GetSelf() << "\n";
 
-	delete entity; 
+	//delete entity; 
 
 
 
